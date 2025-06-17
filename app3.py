@@ -13,7 +13,7 @@ parch = st.number_input("Parents/Children", 0, 10, 0)
 fare = st.number_input("Fare", 0.0, 600.0, 30.0)
 embarked = st.selectbox("Embarked", ["C", "Q", "S"])
 
-model = joblib.load(r'C:\Users\PC\Downloads\rf_model.joblib')
+model = joblib.load(r'rf_model.joblib')
 
 # Expected features (from your training)
 FEATURES = ['Age', 'SibSp', 'Parch', 'Fare', 'Pclass_1', 'Pclass_2', 'Pclass_3',
